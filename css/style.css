@@ -1,0 +1,33 @@
+/*Reset Styles*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*Base Styles*/
+
+html{
+	background:linear-gradient(to top, royalblue, cadetblue, lightblue, aliceblue);
+	padding: 20px;
+}
+
+
+section{
+	margin: 20px 0 0;
+}
+
+h2{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+header,nav{
+
+	display:inline-block;
+}
+
+header h2, nav a{
+	display:inline-block;
+}
