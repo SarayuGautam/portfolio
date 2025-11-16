@@ -9,25 +9,145 @@
 /*Base Styles*/
 
 html{
-	background:linear-gradient(to top, royalblue, cadetblue, lightblue, aliceblue);
-	padding: 20px;
+	background:linear-gradient(to top, cadetblue,aliceblue,white,lightblue,powderblue,white);
+	padding: 3rem;
+	font-family: Monaco, monospace;
 }
 
+html,body{
+	overscroll-behavior: none;
+}
+
+header, #title,nav{
+
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+#contact-form, input, textarea, label{
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+#title{
+	margin-right: 30rem;
+}
+
+#title h1{
+	color:#E014E0;
+	font-family: "Brush Script MT", cursive;
+}
+
+#title p{
+	font-size: 1.2rem;
+	text-align: end;
+}
+
+nav{
+	margin-top: 1rem;
+}
+
+
+nav a{
+	padding: 0 3rem;
+	color:#EB5EEB;
+}
 
 section{
-	margin: 20px 0 0;
+	margin: 3em 0 0;
 }
 
-h2{
-	margin-top: 20px;
+.sub-title{
+	margin-top: 2rem;
 	margin-bottom: 10px;
+	font-size: 1.4rem;
 }
 
-header,nav{
+ul{
+	list-style-type: none;	
 
-	display:inline-block;
 }
 
-header h2, nav a{
-	display:inline-block;
+li{
+	margin-bottom: 1em;
+}
+
+#projects ul li{
+	display: inline-block;
+	margin-right: 3rem;
+	margin-top: 1rem;
+}
+
+#projects ul li a{
+	display: block;
+	margin-bottom: 1rem;
+	color: black;
+}
+
+.project-image{
+	width:10rem;
+	height: 10rem;
+	margin-bottom:1rem ;
+	viewport-fit: box-sizing;
+}
+
+.project-desc{
+	font-size: 0.9rem;
+}
+
+#contact{
+	margin-bottom: 3rem;
+}
+
+
+#contact-form * {
+ 	margin-top: 1rem;
+}
+
+
+
+ input, 
+ textarea{
+	margin-left: 2rem;
+	width: 20rem;
+	font: inherit;
+	padding: 0.7rem;
+	padding-bottom: 0;
+	border: none;
+	border-bottom: 0.1rem solid black;
+	background-color: transparent;
+	appearance: none;
+	outline: none;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+    border-bottom-color: #E014E0; 
+}
+
+#send{
+	margin-left: 2rem;
+	width:7rem;
+	text-align: center;
+	padding: 0.4rem;
+	font:inherit ;
+	border-radius: 2rem;
+	border-color:#E014E0;
+}
+
+#send:hover
+ {
+	color:#E014E0;
+}
+
+
+footer{
+	text-align: center;
+	position: float;
+	font-weight: bold;
 }

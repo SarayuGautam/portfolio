@@ -8,17 +8,20 @@
 	</head>
 	<body>
 		<header>
-			<h1>Hi! I am Sarayu.</h1>
-			<h2>Welcome to my portfolio</h2>
+			<div id="title">
+				<h1>Hi! I am Sarayu.</h1>
+				<p>Welcome to my portfolio</p>
+			</div>
+			<nav>
+				<a href="https://www.linkedin.com/in/sarayugautam/">LinkedIn</a>
+				<a href="https://sarayugautam1.medium.com/">Medium</a>
+				<a href="https://github.com/SarayuGautam">GitHub</a>
+			</nav>
 		</header>
-		<nav>
-			<a href="https://www.linkedin.com/in/sarayugautam/">LinkedIn</a>
-			<a href="https://www.linkedin.com/in/sarayugautam/">Medium</a>
-			<a href="https://github.com/SarayuGautam">GitHub</a>
-		</nav>
+		
 		<section id="about">
-			<h2>About Me</h2>
-			<ul>
+			<h2 class="sub-title">About Me</h2>
+			<ul class="about-list">
 				<li>I teach Full Stack Development at Herald College, Kathmandu.</li>
 				<li>I have a year of experience in Corporate as Data Engineer for Retail Data Analytics.</li>
 				<li>I'm a Flutter Developer judging by number of apps I've developed.</li>
@@ -27,24 +30,40 @@
 			</ul>
 		</section>
 		<section id="projects">
-			<h2>My Projects</h2>
+			<h2 class="sub-title">My Projects</h2>
 			<ul>
-				<li><a href="https://github.com/SarayuGautam/FireWorkSimulation">Firework Simulation</a></li>
-				<li><a href="https://github.com/SarayuGautam/FireWorkSimulation">Feel Now</a></li>
-				<li><a href="https://github.com/SarayuGautam/cognifeed">Cognifeed</a></li>
+				<li>
+					<a href="https://sarayugautam.github.io/portfolio/">Portfolio Project</a>
+					<img class="project-image" src="images/portfolio.png">
+					<p class="project-desc">Week1 workshop demo</p>
+				</li>
+				<li>
+					<a href="https://github.com/SarayuGautam/FireWorkSimulation">Firework Simulation</a>
+					<img class="project-image" src="images/firework.png">
+					<p class="project-desc">Graphics with P5js</p>
+				</li>
+				<li>
+					<a href="https://github.com/SarayuGautam/cognifeed">Cognifeed</a>
+					<img class="project-image" src="images/cognifeed.png">
+					<p class="project-desc">A curated information portal</p>
+				</li>
 			</ul>
 		</section>
 		<section id="contact">
-			<h2>Contact Me</h2>
-			<form action="/index.html" method="POST">
+			<h2 class="sub-title">Contact Me</h2>
+			<form  id ="contact-form" action="index.html" method="POST">
 				<label for="name">Your Name</label>
 				<input type="text" id="name">
 				<label for="email">Your Email</label>
 				<input type="email" id="email">
-				<label for="message">Message To Sarayu</label>
+				<br>
+				<label for="message">What do you wanna say?</label>
 				<textarea id="message" maxlength="300"></textarea>
 				<button type="submit" id="send">Send</button>
 			</form>
 		</section>
+		<footer>
+			<h4>&copy; 2025, Sarayu Gautam's Personal Website</h4>
+		</footer>
 	</body>
 </html>
