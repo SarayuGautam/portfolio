@@ -29,8 +29,7 @@ ul {
   list-style: none;
 }
 
-/* Scroll Progress Bar */
-#scroll-progress {
+/*#scroll-progress {
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +39,7 @@ ul {
   z-index: 1000;
   transition: width 0.1s ease;
 }
-
+*/
 #video-background {
   position: absolute;
   top: 0;
@@ -175,7 +174,6 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
 #contact,
 footer {
   text-align: center;
@@ -328,13 +326,13 @@ footer {
   border: 1px solid #f44336;
 }
 
-/* Mobile Menu Open State */
 @media screen and (max-width: 767px) {
+
+
   #main-nav.open {
     flex-direction: column;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.95);
     padding: 2rem;
@@ -352,8 +350,11 @@ footer {
 
   #main-nav.open #menu-icon {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0;
+    right: -3rem;
+    font-size:1.2rem;
+    color:red;
+    margin-bottom:1rem;
   }
 }
 

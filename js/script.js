@@ -2,33 +2,33 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuIcon = document.getElementById('menu-icon');
   const mainNav = document.getElementById('main-nav');
 
-  if (menuIcon && mainNav) {
-    menuIcon.addEventListener('click', function () {
-      mainNav.classList.toggle('open');
+  
+  menuIcon.addEventListener('click', function () {
+    mainNav.classList.toggle('open');
 
-      if (mainNav.classList.contains('open')) {
-        menuIcon.textContent = '✕';
-        menuIcon.setAttribute('aria-expanded', 'true');
-      } else {
-        menuIcon.textContent = '☰';
-        menuIcon.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
+    if (mainNav.classList.contains('open')) {
+      menuIcon.textContent = '✕';
+      menuIcon.setAttribute('aria-expanded', 'true');
+    } else {
+      menuIcon.textContent = '☰';
+      menuIcon.setAttribute('aria-expanded', 'false');
+    }
+  });
 
-  const scrollProgress = document.getElementById('scroll-progress');
 
-  if (scrollProgress) {
-    window.addEventListener('scroll', function () {
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  // const scrollProgress = document.getElementById('scroll-progress');
 
-      const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+  // if (scrollProgress) {
+  //   window.addEventListener('scroll', function () {
+  //     const windowHeight = window.innerHeight;
+  //     const documentHeight = document.documentElement.scrollHeight;
+  //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      scrollProgress.style.width = scrollPercentage + '%';
-    });
-  }
+  //     const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+  //     scrollProgress.style.width = scrollPercentage + '%';
+  //   });
+  // }
 
   const contactForm = document.getElementById('contact-form');
 
@@ -84,5 +84,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
+
+
+
+  const submitBtn = document.getElementById('submit-btn');
+
+  submitBtn.addEventListener('click',()=>{
+
+  })
 });
 
